@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello World - TensorFlow.js</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>TensorFlow.js MNIST classifier</h1>
+    <p>See console for even more outputs</p>
+
+    <section class="box">
+      <h2>Input Image</h2>
+      <p>
+        Input image is a 28x28 pixel greyscale image from MNIST dataset - a real
+        hand drawn digit!
+      </p>
+      <canvas id="canvas" width="28" height="28"></canvas>
+    </section>
+    <section class="box">
+      <h2>Prediciton</h2>
+      <p>
+        Below you see what number the trained TensorFlow.js model has predicted
+        from the input image.
+      </p>
+      <p>Red is a wrong prediction, Green is a correct one.</p>
+      <p id="prediction">Training model. Please wait...</p>
+    </section>
+    <section class="box">
+      Try to write a number:
+      <canvas id="drawing"></canvas>
+      <a id="btnSubmit" href="#submit">Submit</a>
+      <a id="btnClear" href="#clear">Clear</a> 
+    </section>
+    <section class="box">
+      <h2>Prediciton</h2>
+      <p>
+        Below you see what number the trained TensorFlow.js model has predicted
+        from the input image.
+      </p>
+      <p>Red is a wrong prediction, Green is a correct one.</p>
+      <p id="prediction2">Training model. Please wait...</p>
+    </section>
+    <!-- Import TensorFlow.js library -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.3.0/dist/tf.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- Import the page's JavaScript to do some stuff -->
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
